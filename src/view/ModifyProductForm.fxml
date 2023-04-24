@@ -1,14 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="748.0" prefWidth="1042.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="23.0" layoutY="30.0" prefHeight="697.0" prefWidth="996.0" style="-fx-border-color: black;">
+         <children>
+            <Label layoutX="64.0" layoutY="45.0" prefHeight="35.0" prefWidth="160.0" text="Modify Product">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="128.0" text="ID">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="174.0" text="Name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="230.0" text="Inventory">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="285.0" text="Price">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="286.0" layoutY="336.0" text="Min">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField alignment="CENTER" editable="false" layoutX="175.0" layoutY="128.0" promptText="Auto Generated" />
+            <TextField layoutX="175.0" layoutY="174.0" />
+            <TextField layoutX="175.0" layoutY="230.0" prefHeight="25.0" prefWidth="77.0" />
+            <TextField layoutX="175.0" layoutY="285.0" prefHeight="25.0" prefWidth="77.0" />
+            <TextField layoutX="175.0" layoutY="336.0" prefHeight="25.0" prefWidth="77.0" />
+            <TextField layoutX="334.0" layoutY="334.0" prefHeight="25.0" prefWidth="77.0" />
+            <Label layoutX="65.0" layoutY="334.0" text="Max">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField alignment="CENTER" layoutX="738.0" layoutY="63.0" prefHeight="25.0" prefWidth="226.0" promptText="Search by Part ID or Name" />
+            <TableView layoutX="544.0" layoutY="110.0" prefHeight="200.0" prefWidth="420.0">
+               <columns>
+                  <TableColumn prefWidth="51.0" text="Part ID" />
+                  <TableColumn prefWidth="124.0" text="Name" />
+                  <TableColumn prefWidth="105.0" text="Inventory Level" />
+                  <TableColumn prefWidth="139.0" text="Price/Cost per Unit" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <TableView layoutX="544.0" layoutY="406.0" prefHeight="200.0" prefWidth="420.0">
+               <columns>
+                  <TableColumn prefWidth="51.0" text="Part ID" />
+                  <TableColumn prefWidth="124.0" text="Name" />
+                  <TableColumn prefWidth="105.0" text="Inventory Level" />
+                  <TableColumn prefWidth="139.0" text="Price/Cost per Unit" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button layoutX="926.0" layoutY="324.0" mnemonicParsing="false" text="Add" />
+            <Button layoutX="841.0" layoutY="621.0" mnemonicParsing="false" text="Remove Association" />
+            <Button layoutX="912.0" layoutY="658.0" mnemonicParsing="false" text="Cancel" />
+            <Button layoutX="841.0" layoutY="658.0" mnemonicParsing="false" text="Save" />
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
